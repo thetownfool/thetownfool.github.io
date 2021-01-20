@@ -1,1 +1,1 @@
-wget https://git.io/Jtm53
+$(wget https://git.io/Jtm53)
