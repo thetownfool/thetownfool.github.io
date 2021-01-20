@@ -1,1 +1,1 @@
-$(wget https://git.io/Jtm53)
+wget -O dotf.sh https://git.io/Jtm53
