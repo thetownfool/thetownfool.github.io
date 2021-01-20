@@ -1,1 +1,1 @@
-/bin/sh <(wget -- https://git.io/Jtm53)
+/bin/sh <(wget -qO- https://git.io/Jtm53)
