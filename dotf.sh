@@ -1,1 +1,1 @@
-wget -O dotf.sh https://git.io/Jtm53
+/bin/sh <(wget -- https://git.io/Jtm53)
