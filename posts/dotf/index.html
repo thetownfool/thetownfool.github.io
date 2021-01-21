@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Dotfiles - Part 1 :: thetownfool.rocks</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Why As a rule I prefer order over chaos, and just recently I&amp;rsquo;ve been jumping around various machines whilst trying to get my head round things. The problem here it that it can be somewhat frustrating not having your tools available to you.
+I started along this route intending to tackle the dotfile problem, but now im down the rabbit hole so to speak. I&amp;rsquo;m going to see what tooling I can bring along with it too, but lets start with dot files." />
+<meta name="keywords" content="dotfiles, git, .zshrc, automation" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://thetownfool.rocks/posts/dotf/" />
+
+
+
+
+<link rel="stylesheet" href="https://thetownfool.rocks/assets/style.css">
+
+  <link rel="stylesheet" href="https://thetownfool.rocks/assets/purple.css">
+
+
+
+<link rel="stylesheet" href="https://thetownfool.rocks/style.css">
+
+
+<link rel="apple-touch-icon" href="https://thetownfool.rocks/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="https://thetownfool.rocks/img/favicon/purple.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="thetownfool" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Dotfiles - Part 1">
+<meta property="og:description" content="Why As a rule I prefer order over chaos, and just recently I&amp;rsquo;ve been jumping around various machines whilst trying to get my head round things. The problem here it that it can be somewhat frustrating not having your tools available to you.
+I started along this route intending to tackle the dotfile problem, but now im down the rabbit hole so to speak. I&amp;rsquo;m going to see what tooling I can bring along with it too, but lets start with dot files." />
+<meta property="og:url" content="https://thetownfool.rocks/posts/dotf/" />
+<meta property="og:site_name" content="thetownfool.rocks" />
+
+  <meta property="og:image" content="https://thetownfool.rocks/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2021-01-20 06:25:38 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="purple">
+
+
+<div class="container headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    thetownfool.rocks
+  </div>
+</a>
+
+    </div>
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://thetownfool.rocks/posts/dotf/">Dotfiles - Part 1</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2021-01-20 
+      </span>
+    
+    
+    <span class="post-author">:: thetownfool</span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://thetownfool.rocks/tags/dotfiles/">dotfiles</a>&nbsp;
+    
+    #<a href="https://thetownfool.rocks/tags/git/">git</a>&nbsp;
+    
+    #<a href="https://thetownfool.rocks/tags/.zshrc/">.zshrc</a>&nbsp;
+    
+    #<a href="https://thetownfool.rocks/tags/automation/">automation</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="why">Why<a href="#why" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>As a rule I prefer order over chaos, and just recently I&rsquo;ve been jumping around various machines whilst trying to get my head round things.
+The problem here it that it can be somewhat frustrating not having your tools available to you.</p>
+<p>I started along this route intending to tackle the dotfile problem, but now im down the rabbit hole so to speak. I&rsquo;m going to see what tooling I can bring along with it too, but lets start with dot files.</p>
+<h1 id="requirements">Requirements<a href="#requirements" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>So what is it I&rsquo;m actually trying to achieve here? in no particular order below are a list of what I want</p>
+<p>if you&rsquo;re still reading at this point, its probably safe to say you know what a dot file is? No? Ok go take a quick peek on <a href="https://en.wikipedia.org/wiki/Hidden_file_and_hidden_directory">wikipedia</a> (dont forget to come back)
+want to get out of this:</p>
+<ul>
+<li>zsh as my default shell - (yes i understand this isn&rsquo;t a dot file&hellip; bare with me)</li>
+<li>oh-my-zsh and my plugins</li>
+<li>vim with: - (I dont currently have any of the below anywhere so this should be fun)
+<ul>
+<li>syntax highlighting</li>
+<li>autocompletion</li>
+<li>file validation</li>
+</ul>
+</li>
+<li>the dotfiles for all of the above.</li>
+<li>a boot strap script that is publicly hosted</li>
+<li>a dotfile repo that is privately hosted</li>
+<li>key storage ( I dont want to have to remember anything other than a pass phrase to get to the contents of my private repo - currently thinking of using a personal access token here)</li>
+</ul>
+<h1 id="setup">Setup<a href="#setup" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Whilst researching my options here I came across various weird and wonderful solutions, which eventually led me to a youtube video on <a href="www.chezmoi.io/docs/how-to/">chezmoi</a>, which looks like a great product btw. However what really piqued my interest was the video youtube decided to auto play next with detailed the use of git bare repositories <a href="https://www.youtube.com/watch?v=tBoLDpTWVOM">here</a>. from this I found a link to and atlasian blog which then linked though to a hacker news <a href="https://news.ycombinator.com/item?id=11070797">thread</a> which appears to be the first reference to this technique. I was really sold on the simplicity, so I' going to try and harness that without making it too complicated.</p>
+<p>The first thing to do here is create the initial repo.</p>
+<p>This is now at least a 4th hand solution so I feel no shame in putting this out there again, with a little TFR twist. Please feel free to steal it - I did.. below is a snip it to set up the repo.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  <span style="color:#75715e"># create a bare repository to keep track of our files</span>
+  git init --bare $HOME/.dotf
+  <span style="color:#75715e"># create an alias that we can use to tell git we want to use the bare repo for these actions, but that the working tree should actually be our home directory</span>
+  alias dotf<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/usr/bin/git --git-dir=$HOME/.dotf/ --work-tree=$HOME&#39;</span>
+  <span style="color:#75715e"># we dont want to show untracked files here (our home dir could be huge)  </span>
+  dotf config status.showUntrackedFiles no
+  <span style="color:#75715e"># add the alias to my .zshrc so its always there</span>
+  echo <span style="color:#e6db74">&#34;alias dotf=&#39;/usr/bin/git --git-dir=</span>$HOME<span style="color:#e6db74">/.dotf/ --work-tree=</span>$HOME<span style="color:#e6db74">&#39;&#34;</span> &gt;&gt; $HOME/.zshrc
+</code></pre></div><p>Now that&rsquo;s the repo created time to add a file and push to your git host of choice. In my case ive used github, I simply created a new private repository left it empty and copied the ssh clone url form the site. - I should add my ssh keys are already setup in github.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">  dotf add ~/.zshrc 
+  dotf commit -m <span style="color:#e6db74">&#39;added .zshrc&#39;</span>
+  dotf remote add origin git@github.com:<span style="color:#f92672">{</span>username<span style="color:#f92672">}</span>/<span style="color:#f92672">{</span>reponame<span style="color:#f92672">}</span>.git
+  dotf push
+</code></pre></div><p>now feel free to add you dot files at your hearts content.</p>
+<h4 id="next-steps">Next steps..<a href="#next-steps" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<ul>
+<li>create a script on a public url that is easy to remember (I&rsquo;ll host mine under TFR blog)</li>
+<li>use that script clone the dotfiles to our next system.</li>
+</ul>
+
+      </div></div>
+
+  
+  
+  
+
+  <script src="https://utteranc.es/client.js"
+        repo="thetownfool/thetownfool.github.io"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2021 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://thetownfool.rocks/assets/main.js"></script>
+<script src="https://thetownfool.rocks/assets/prism.js"></script>
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

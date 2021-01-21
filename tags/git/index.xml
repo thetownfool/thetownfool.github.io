@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>thetownfool.rocks</title>
-    <link>https://thetownfool.rocks/</link>
-    <description>Recent content on thetownfool.rocks</description>
+    <title>git on thetownfool.rocks</title>
+    <link>https://thetownfool.rocks/tags/git/</link>
+    <description>Recent content in git on thetownfool.rocks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Jan 2021 06:25:38 +0000</lastBuildDate><atom:link href="https://thetownfool.rocks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2021 06:25:38 +0000</lastBuildDate><atom:link href="https://thetownfool.rocks/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dotfiles - Part 1</title>
       <link>https://thetownfool.rocks/posts/dotf/</link>

@@ -3,26 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://thetownfool.github.io/posts/</loc>
-    <lastmod>2021-01-20T06:59:49+00:00</lastmod>
+    <loc>https://thetownfool.rocks/tags/.zshrc/</loc>
+    <lastmod>2021-01-20T06:25:38+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thetownfool.github.io/</loc>
-    <lastmod>2021-01-20T06:59:49+00:00</lastmod>
+    <loc>https://thetownfool.rocks/tags/automation/</loc>
+    <lastmod>2021-01-20T06:25:38+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thetownfool.github.io/posts/wip/</loc>
-    <lastmod>2021-01-20T06:59:49+00:00</lastmod>
+    <loc>https://thetownfool.rocks/tags/dotfiles/</loc>
+    <lastmod>2021-01-20T06:25:38+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thetownfool.github.io/categories/</loc>
+    <loc>https://thetownfool.rocks/posts/dotf/</loc>
+    <lastmod>2021-01-20T06:25:38+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://thetownfool.github.io/tags/</loc>
+    <loc>https://thetownfool.rocks/tags/git/</loc>
+    <lastmod>2021-01-20T06:25:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thetownfool.rocks/posts/</loc>
+    <lastmod>2021-01-20T06:25:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thetownfool.rocks/tags/</loc>
+    <lastmod>2021-01-20T06:25:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thetownfool.rocks/</loc>
+    <lastmod>2021-01-20T06:25:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thetownfool.rocks/categories/</loc>
   </url>
   
 </urlset>

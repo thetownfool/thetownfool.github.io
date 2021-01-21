@@ -2,9 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on thetownfool.rocks</title>
-    <link>https://thetownfool.github.io/tags/</link>
+    <link>https://thetownfool.rocks/tags/</link>
     <description>Recent content in Tags on thetownfool.rocks</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://thetownfool.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Jan 2021 06:25:38 +0000</lastBuildDate><atom:link href="https://thetownfool.rocks/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.zshrc</title>
+      <link>https://thetownfool.rocks/tags/.zshrc/</link>
+      <pubDate>Wed, 20 Jan 2021 06:25:38 +0000</pubDate>
+      
+      <guid>https://thetownfool.rocks/tags/.zshrc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automation</title>
+      <link>https://thetownfool.rocks/tags/automation/</link>
+      <pubDate>Wed, 20 Jan 2021 06:25:38 +0000</pubDate>
+      
+      <guid>https://thetownfool.rocks/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dotfiles</title>
+      <link>https://thetownfool.rocks/tags/dotfiles/</link>
+      <pubDate>Wed, 20 Jan 2021 06:25:38 +0000</pubDate>
+      
+      <guid>https://thetownfool.rocks/tags/dotfiles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://thetownfool.rocks/tags/git/</link>
+      <pubDate>Wed, 20 Jan 2021 06:25:38 +0000</pubDate>
+      
+      <guid>https://thetownfool.rocks/tags/git/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

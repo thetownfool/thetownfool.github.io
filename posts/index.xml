@@ -2,18 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on thetownfool.rocks</title>
-    <link>https://thetownfool.github.io/posts/</link>
+    <link>https://thetownfool.rocks/posts/</link>
     <description>Recent content in Posts on thetownfool.rocks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Jan 2021 06:59:49 +0000</lastBuildDate><atom:link href="https://thetownfool.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2021 06:25:38 +0000</lastBuildDate><atom:link href="https://thetownfool.rocks/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Work in progress</title>
-      <link>https://thetownfool.github.io/posts/wip/</link>
-      <pubDate>Wed, 20 Jan 2021 06:59:49 +0000</pubDate>
+      <title>Dotfiles - Part 1</title>
+      <link>https://thetownfool.rocks/posts/dotf/</link>
+      <pubDate>Wed, 20 Jan 2021 06:25:38 +0000</pubDate>
       
-      <guid>https://thetownfool.github.io/posts/wip/</guid>
-      <description>Work in progress Please pop back later once this site is up and running</description>
+      <guid>https://thetownfool.rocks/posts/dotf/</guid>
+      <description>Why As a rule I prefer order over chaos, and just recently I&amp;rsquo;ve been jumping around various machines whilst trying to get my head round things. The problem here it that it can be somewhat frustrating not having your tools available to you.
+I started along this route intending to tackle the dotfile problem, but now im down the rabbit hole so to speak. I&amp;rsquo;m going to see what tooling I can bring along with it too, but lets start with dot files.</description>
     </item>
     
   </channel>
